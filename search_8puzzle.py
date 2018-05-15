@@ -238,8 +238,8 @@ def readfile(filename):
 # Main method
 def main():
     starting_state = readfile("state.txt")
-    ### CHANGE THIS FUNCTION TO USE bfs, dfs, ids or a_star
-    result = ucs(starting_state, goal_state)
+    ### CHANGE THIS FUNCTION TO USE bfs, dfs, ids or ucs
+    result = bfs(starting_state, goal_state)
     
     if result == None:
         print("No solution found")
